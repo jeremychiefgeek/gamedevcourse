@@ -1,4 +1,4 @@
-# Game Development Learning Path: 12-Month Roadmap (REVISED)
+# Game Development Learning Path: 12-Month Roadmap 
 
 **Goal:** Build a complete 2D game with a custom engine from scratch  
 **Time Commitment:** 10-16 hours/week (2-4 hours M-F)  
@@ -29,7 +29,7 @@
 
 #### Project 1A: Mathematical & Array Utilities Collection
 
-**REVISED:** This project now focuses on computation and arrays without file I/O.
+This project now focuses on computation and arrays without file I/O.
 
 Create a suite of 4 command-line tools that demonstrate C fundamentals:
 
@@ -148,7 +148,7 @@ prime_check count 100     // Number of primes up to 100: 25
 
 #### Project 1B: Bit Manipulation Library and Complex Data Structures
 
-**REVISED:** Now focuses purely on in-memory operations with structures and bit manipulation.
+Now focuses purely on in-memory operations with structures and bit manipulation.
 
 Create a library (`bitlib.h` and `bitlib.c`) with the following:
 
@@ -379,7 +379,7 @@ typedef struct {
 
 #### Project 1D: File I/O and Build System
 
-**REVISED:** Now properly introduces file I/O when K&R Chapter 7 is covered.
+Now properly introduces file I/O when K&R Chapter 7 is covered.
 
 This project has two parts:
 
@@ -851,7 +851,7 @@ void movement_system_update(ComponentStorage* storage, EntityManager* mgr, float
 
 #### Project 3A: 2D Math Library with Visualization
 
-**REVISED:** Added console-based visualization since we don't have graphics yet.
+**:** Added console-based visualization since we don't have graphics yet.
 
 Build a comprehensive 2D math library.
 
