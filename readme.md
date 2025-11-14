@@ -29,8 +29,6 @@
 
 #### Project 1A: Mathematical & Array Utilities Collection
 
-This project now focuses on computation and arrays without file I/O.
-
 Create a suite of 4 command-line tools that demonstrate C fundamentals:
 
 ##### 1. `calc` - Command-Line Calculator
@@ -48,7 +46,7 @@ calc 7 - 2        // Output: 5
 **Requirements:**
 
 - Parse simple arithmetic expressions (two operands, one operator)
-- Support: +, -, \*, /
+- Support: +, -, *, /
 - Handle integer operations
 - Display error for invalid input
 
