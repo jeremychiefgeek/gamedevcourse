@@ -1,7 +1,7 @@
 # Game Development Learning Path: 6-Month Roadmap
 **Goal:** Build a complete 2D game with a custom engine from scratch  
 **Time Commitment:** 15-20 hours/week  
-**Platform:** Windows  
+**Platform:** Windows, Linux  
 **Language:** C++
 
 ---
