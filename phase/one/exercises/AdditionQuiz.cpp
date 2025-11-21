@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() 
+int main()
 {
   std::cout << "Enter an integer: ";
 
@@ -15,4 +15,3 @@ int main()
   std::cout << a << " + " << b << " = " << a + b << '\n';
   std::cout << a << " - " << b << " = " << a - b << '\n';
 }
-
