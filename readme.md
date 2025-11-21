@@ -493,6 +493,7 @@ public:
 
 ### Weeks 13-14: Textures & Sprite Rendering
 
+**Watch:** HandmadeHero 1-30
 **Read:** Learn OpenGL: Textures, Transformations  
 **Read:** Real-Time Rendering Chapter 6 (Texturing)
 
@@ -1165,6 +1166,7 @@ By the end of 6 months, you should be able to:
 - [ ] OpenGL renderer working
 - [ ] Textures loading
 - [ ] Sprites rendering
+- [ ] HandmadeHero 1-30
 
 ### Month 4 (Weeks 13-16):
 - [ ] Batch renderer optimized
