@@ -25,22 +25,8 @@
 **Focus:** Types, control flow, functions, arrays, pointers, references
 
 #### Project 1A: C++ Fundamentals Suite
-Build 3 command-line tools demonstrating C++ basics:
 
-**1. Calculator** - Expression parser with +, -, *, /
-**2. Prime Checker** - Test primality, list primes, Sieve of Eratosthenes
-**3. String Toolkit** - Reverse, case conversion, analysis
-
-```cpp
-// Example: String toolkit
-class StringToolkit {
-public:
-    std::string reverse(const std::string& str);
-    std::string toUpper(const std::string& str);
-    std::string toLower(const std::string& str);
-    size_t countVowels(const std::string& str);
-};
-```
+See [Projects](./projects.md)
 
 **Success Criteria:**
 - [ ] Clean, modern C++ code
@@ -56,39 +42,7 @@ public:
 **Focus:** Classes, operator overloading, memory hierarchy, cache performance
 
 #### Project 1B: Performance Analysis Toolkit
-
-**1. High-Resolution Timer Class**
-```cpp
-class PerfTimer {
-private:
-    std::chrono::high_resolution_clock::time_point start;
-    std::chrono::high_resolution_clock::time_point end;
-
-public:
-    void startTimer();
-    void endTimer();
-    double getMilliseconds() const;
-};
-```
-
-**2. Cache Performance Experiments**
-```cpp
-// Test: Array of Structures vs Structure of Arrays
-struct Vertex_AOS {
-    float x, y, z;
-    float r, g, b;
-    float nx, ny, nz;
-};
-
-struct VertexArray_SOA {
-    std::vector<float> x, y, z;
-    std::vector<float> r, g, b;
-    std::vector<float> nx, ny, nz;
-};
-
-// Benchmark: Update only positions for 1M vertices
-// Expected: SOA 2-3x faster
-```
+See [Projects](./projects.md)
 
 **3. Memory Layout Analysis**
 - Compare aligned vs unaligned structures
@@ -107,60 +61,7 @@ struct VertexArray_SOA {
 **Read:** LearnCPP.com Chapters 17-20
 
 #### Project 1C: Custom Allocators & Data Structures
-
-**1. Arena Allocator**
-```cpp
-class Arena {
-private:
-    std::unique_ptr<uint8_t[]> memory;
-    size_t size;
-    size_t used;
-
-public:
-    explicit Arena(size_t size);
-    void* allocate(size_t bytes, size_t alignment = 8);
-    void clear();  // Fast reset
-    
-    template<typename T, typename... Args>
-    T* construct(Args&&... args);
-};
-```
-
-**2. Pool Allocator**
-```cpp
-template<typename T>
-class PoolAllocator {
-private:
-    struct FreeNode { FreeNode* next; };
-    std::unique_ptr<uint8_t[]> memory;
-    FreeNode* freeList;
-
-public:
-    explicit PoolAllocator(size_t count);
-    T* allocate();
-    void deallocate(T* ptr);
-};
-```
-
-**3. Dynamic Array (Custom Vector)**
-```cpp
-template<typename T>
-class DynamicArray {
-private:
-    T* data;
-    size_t count;
-    size_t capacity;
-
-public:
-    void push(const T& element);
-    void push(T&& element);
-    T& operator[](size_t index);
-    
-    // Iterator support
-    T* begin() { return data; }
-    T* end() { return data + count; }
-};
-```
+See [Projects](./projects.md)
 
 **Benchmarks Required:**
 - Arena: 10x faster than new/delete
